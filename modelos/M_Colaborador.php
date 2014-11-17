@@ -82,6 +82,27 @@ public function insertar()
 			}  
 	    }
 
+//////////////////////////////////////////////////
+            
+            
+            
+            
+            
+            public function modificarColaborador()
+		{		
+		 $consulta="update colaborador set colaborador_nombre='$this->nombre',colaborador_apellido='$this->apellido',colaborador_email='$this->email',colaborador_materia='$this->ciudad',colaborador_carrera='$this->carrera',colaborador_semestre='$this->semestre',colaborador_sexo='$this->sexo' where(colaborador_id='$this->identificacion')";
+		
+			if(mysql_query($consulta))
+			{ 
+				echo"<script language='javascript'> alert('La Actualizacion es un EXITO');  </script>";
+				echo"<script language='javascript'>location.href=\"../vistas/archivosSubidos.php\"   </script>";		
+			} 
+			else
+			{ 
+				echo"<script language='javascript'> alert('ERROR, No se Actualiz� '); </script>";
+				echo"<script language='javascript'> location.href=\"../vistas/editarUsuarioEstudiante.php\" </script>";			
+			}  
+		}
 
 }
 ?>
