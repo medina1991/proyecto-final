@@ -37,7 +37,7 @@ $(function(){
 
 
 
-</script>	-->		
+</script>	
 	<noscript>
 			<style>
 				.da-thumbs li a div {
