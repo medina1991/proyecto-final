@@ -6,7 +6,6 @@
     </head>
     <body>
         <?php
-        // put your code here
-        ?>
+elementos        ?>
     </body>
 </html>

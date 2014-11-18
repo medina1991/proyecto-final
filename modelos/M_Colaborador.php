@@ -78,7 +78,7 @@ public function insertar()
 			else
 			{ 
 				/*echo mysql_error();*/
-				echo"<script language='javascript'>location.href=\"../vistas/ingresarUsuario.php\"</script>";			
+				echo"<script language='javascript'>location.href=\"../vistas/ingresarColaborador.php\"</script>";			
 			}  
 	    }
 

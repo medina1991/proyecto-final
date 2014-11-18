@@ -13,7 +13,7 @@
                 <nav>
 
                     <ul>
-                        <li><a><h3>PERFIL ADMINISTRADOR<h3></li><br>
+                        <li><a><h3>ADMINISTRADOR<h3></li><br>
 
                                         <li><a>Aspirante</li>
                                         <li><a href="ingresarAspirante.php">Ingresar Aspirante</a></li>
