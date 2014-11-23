@@ -1,4 +1,5 @@
-<div class="span12">
+<center>
+<div class="span12" >
 				<div class="header">
 				<div class="pull-left">
 				<img class="stilogo" src="../imagenes/Banner1.png"> 
@@ -14,3 +15,4 @@
 
 					</div>					
 </div>
+</center>
