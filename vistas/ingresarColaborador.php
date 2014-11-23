@@ -1,11 +1,8 @@
-<!doctype html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="../js/jquery.js"></script>
-        <link rel=stylesheet href="pc1.css" type="text/css" />
-    </head>
-    <body>
+<?php include('header.php'); ?>
+<?php include('head.php'); ?>
+<?php include('BarraNavegacionCol.php'); ?>
+
+<div id="contenedor">
         <?php include("../modelos/M_Colaborador.php");?>
         <h3>INGRESAR NUEVO COLABORADOR</h3><br>
         <form name="form1" method="post" action="../controladores/C_Colaborador.php">
@@ -43,18 +40,13 @@
                             <option value="femenino">Femenino</option> 
                         </select></td></tr>
                 
-               <td colspan="2" align="center" class="registr"><input type="submit" name="Submit" value="INGRESAR COLABORADOR" onClick="ingresar()" > <input type='hidden' name='txtoperacion' value='des'></td>-->
+               <td colspan="2" align="center" class="registr">
+                   <input type="submit" name="Submit" value="INGRESAR COLABORADOR" onClick="ingresar()"> 
+                   <input type='hidden' name='txtoperacion' value='des'></td>
                <!--<td colspan="2" align="center" class="registr"><input type="submit" name="Submit" value="INGRESAR COLABORADOR" </td>-->
+            </table>
         </form>
-    </div>
-</aside>
+<div style="clear:both"></div>
 <div style="clear:both"></div>
 </div>
-</section>
-<div style="clear:both"></div>
-<footer>
-    <h6>Universidad Distrital Francisco Jose de Caldas</h6>
-</footer>
-</div>
-</body>
-</html>
+<?php include('footer.php'); ?>

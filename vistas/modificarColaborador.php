@@ -1,21 +1,9 @@
-﻿<!doctype html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="../js/jquery.js"></script>
-        <link rel=stylesheet href="../css/pc1.css" type="text/css" />
-    </head>
-    <body>
+<?php include('header.php'); ?>
         <div id="contenedor">
-            <header>
-                <div id="titulo">
-                    <div id="logo">
-                    </div>
-                    <h1>Universidad Distrital Francisco Jose de Caldas</h1>
-
-                </div>
-                <div style="clear:both;"></div>
-            </header>
+<?php include('head.php'); ?>     
+<?php include('BarraNavegacionCol.php'); ?>
+            
+            
             <section>
                 <div id="contieneblog">
 
@@ -81,9 +69,5 @@
                 </div>
             </section>
             <div style="clear:both"></div>
-            <footer>
-                <h6>Universidad Distrital Francisco Jose de Caldas</h6>
-            </footer>
         </div>
-    </body>
-</html>
+<?php include('footer.php'); ?>
