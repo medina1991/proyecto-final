@@ -1,5 +1,11 @@
   		
-	<?php include('tooltip.php'); ?>			
+	<?php include('tooltip.php'); ?>	
+
+
+
+
+
+
 	<div class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-inner"> <!-- CLASE CSS-->
                 <div class="container">

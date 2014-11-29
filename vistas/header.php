@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AUN 3.0</title>
+	<title>RED</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<!-- Icono AUN -->
-		<link rel='shorcut icon' href='URL_AUN.png' type='image/png'>
+<!-- Icono AUN --> <link rel='shorcut icon' href='URL_AUN.png' type='image/png'>
+		
+		<link rel=stylesheet href="css/estilo.css" type="text/css" />
 
 	<!-- Bootstrap -->
 			<link href="css/bootstrap.css" rel="stylesheet" media="screen">

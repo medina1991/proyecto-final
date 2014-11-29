@@ -6,7 +6,7 @@
 <form name="form1" method="post" action="controladores/C_Usuario.php">
                 <h3>INGRESAR</h3>
                   <div>USUARIO:</div>
-	          <div><input type="text" name="cedula"  tilte="Numero de identificacion" value=""></div>
+	          <div><input type="text" name="usuario"  tilte="Numero de identificacion" value=""></div>
                   
                   <div>CONTRASEÑA:</div>
 		  <div><input name="login" type="password" title="Escriba su conraseña aqui" value=""></div>

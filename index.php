@@ -1,10 +1,10 @@
 <?php include('header.php'); ?>
-
+ <?php include('BarraNavegacion.php'); ?>
     <div class="container">
 		<div class="margin-top">
 			<div class="row">
 					<?php include('head.php'); ?>
-                            <?php include('BarraNavegacion.php'); ?>
+                           
 			
 				<div class="span10">
 					<?php //include('slider.php'); ?>

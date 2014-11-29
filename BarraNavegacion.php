@@ -1,5 +1,40 @@
   		
-	<?php include('tooltip.php'); ?>			
+	<?php include('tooltip.php'); ?>	
+
+
+<div id='cssmenu'>
+  <ul>
+     <li class='active'><a href='index.php'>Home</a></li>
+     <li class='has-sub '><a href='#'>Nosotros</a>
+        <ul>
+           <li class='has-sub '><a href='#'>Ver</a>
+              <ul>
+                  <li><a href='#'>ver1</a></li>
+                 <li><a href='#'>ver 2</a></li>
+              </ul>
+           </li>
+           <li class='has-sub '><a href='#'>Iniciar </a>
+              <ul>
+                 <li><a href='#'>Sub Item</a></li>
+                 <li><a href='#'>Sub Item</a></li>
+              </ul>
+           </li>
+        </ul>
+     </li>
+     <li><a href='#'>Nosotros</a></li>
+     <li><a href='login.php'>Iniciar Sesion</a></li>
+      <li><a href='#'>Contacto</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
 	<div class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-inner"> <!-- CLASE CSS-->
                 <div class="container">

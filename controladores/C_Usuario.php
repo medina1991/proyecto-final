@@ -1,7 +1,7 @@
 <?php
 require_once("../modelos/M_Usuario.php");
  ////////////////////////////
-$cedula=$_POST["cedula"];
+$cedula=$_POST["usuario"];
 $nombre=$_POST["nombre"];
 $apellido=$_POST["apellido"];
 $correo=$_POST["correo"];
@@ -16,5 +16,19 @@ $objUsuario = new usuario($cedula,$nombre,$apellido,$email,$login,$permiso);
 if($operacion=="verificar")
 {
 	$objUsuario->verificar();
+}
+
+
+
+if($operacion=="consultarDatos")
+{
+	$objUsuario->consultarDatos();
+}
+
+
+if($operacion=="actualizar")
+{
+
+	$objUsuario->modificar();
 }
 ?>

@@ -20,7 +20,7 @@ $identificacion = $_SESSION['identificacion'];
 						}
 				   ?>
 				   </a></li>
-				   <li><a href="datosPsicologo.php">Datos personales</a></li>
+				   <li><a href="datosAdministrador.php">Datos personales</a></li>
 				   <li><a href="cambiarContrasena.php">Cambiar Contraseña</a></li>
 				  </ul>
 				 </nav>

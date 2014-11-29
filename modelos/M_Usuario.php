@@ -53,8 +53,9 @@ $consulta= mysql_query("select*from usuarios where usuario_identificador='$this-
 					}
                                         else if($fila['usuario_permisos']=='administrador')
 					{
-			 			header("location: ../vistas/administrador.php");
-                                                echo"<script language='javascript'> alert('Administrador');  </script>";
+			 			
+                                               echo"<script language='javascript'> alert('ADMINISTRADOR');  </script>";
+                                               header("location: ../vistas/administrador.php");
 					}
 					                                        
                                         else
@@ -70,6 +71,44 @@ $consulta= mysql_query("select*from usuarios where usuario_identificador='$this-
 		}
 
 ///////////////////////////////////////////
+                
+                public function consultarDatos()
+		{		
+		$peticion=mysql_query("select * from usuarios where usuario_nombre='$this->nombre'");
+			
+			while($fila=mysql_fetch_array($peticion))
+			{  $this->cedula = $fila['usuario_identificador'];
+			   
+			}
+		
+		 $consulta=mysql_query("select *from usuarios where (usuario_identificador='$this->cedula')");		
+				
+			if($row=mysql_fetch_array($consulta))
+			{
+				//echo "encontro";
+				echo"<script language='javascript'> alert('La consulta es un EXITO');  </script>";
+				echo"<script language='javascript'> location.href=\"../vistas/editarDatos.php?cedula=".$row['usuario_identificador']."\"</script>";
+			}
+		}
+
+                
+                //---------------------Funcion No 2-----------------
+                
+                public function modificar()
+		{		
+		 $consulta="update usuarios set usuario_nombre='$this->nombre',usuario_apellido='$this->apellido',usuario_correo='$this->email' where(usuario_identificador='$this->cedula')";
+		
+			if(mysql_query($consulta))
+			{ 
+				echo"<script language='javascript'> alert('La Actualizacion es un EXITO');  </script>";
+				echo"<script language='javascript'>location.href=\"../vistas/administrador.php\"   </script>";		
+			} 
+			else
+			{ 
+				echo"<script language='javascript'> alert('ERROR, No se Actualizo'); </script>";
+				echo"<script language='javascript'> location.href=\"../vistas/editarUsuario.php\" </script>";			
+			}  
+		}
 	
 }
 ?>
