@@ -21,7 +21,7 @@
 					<li class="">
 						<a  rel="tooltip"  data-placement="bottom" title="Ingreso Colaborador Info" id="home"   href="IngresarColaborador.php">
 							<i class="icon-home icon-large"> <!--ICONO DE HOME CASA -->
-							</i>&nbsp;Colaborador</a> 
+							</i>&nbsp;Ingresar</a> 
 						</li>
 					<li class="divider-vertical">
 					</li>
@@ -31,7 +31,7 @@
 					<li class="">
                                             <a rel="tooltip"  data-placement="bottom" title="Modificando LaInformacion" id="login" href="modificarColaborador.php">
 						<i class="icon-info-sign icon-large">
-						</i>&nbsp;Colaborador</a> 
+						</i>&nbsp;Modifica Col</a> 
 					</li>
 					<li class="divider-vertical">	</li>
 
