@@ -8,16 +8,10 @@
 			
 
 					<div class="alert alert-info">
-						<Strong>(C) Aspirantes UN, </strong>&nbsp;Bienvenidos ! gracias por seguirnos...
+						<Strong>(C) Aspirantes UN, </strong>&nbsp;
+                                                Bienvenidos ! gracias por seguirnos...
 							
-							<div class="pull-right">
-								<i class="icon-calendar icon-large"></i>
-								<?php
-								$FechaHoy = date('y:m:d');
-								$new = date('l, F d, Y', strtotime($FechaHoy));
-								echo $new;
-								?>
-							</div>
+					
 
 
 					</div>

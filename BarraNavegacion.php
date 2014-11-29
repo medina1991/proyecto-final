@@ -29,7 +29,7 @@
 
 
 					<li class="">
-					<a rel="tooltip"  data-placement="bottom" title="Click Para ir a Nosotros" id="login" href="about.php">
+					<a rel="tooltip"  data-placement="bottom" title="Click Para ir a Nosotros" id="login" href="#">
 						<i class="icon-info-sign icon-large"><!--ICONO DE ADVERTENCIA -->
 						</i>&nbsp;Nosotros</a> 
 					</li>
@@ -47,23 +47,23 @@
 
 
 					<li class="">
-					<a rel="tooltip"  data-placement="bottom" title=" " id="MODIFICARaND" href="estado_aspirante.php">
+					<a rel="tooltip"  data-placement="bottom" title=" " id="MODIFICARaND" href="#">
 						<i class="icon-user icon-large"> <!--ICONO DE USUARIO -->
 						</i>&nbsp;Consultar Estado</a>
 					</li>
                  <li class="divider-vertical"></li>
 
                  <li class="">
-					<a rel="tooltip"  data-placement="bottom" title="Click Here to About" id="MODIFICARaND" href="aspirante">
+                     <a rel="tooltip"  data-placement="bottom" title="Click Here to About" id="MODIFICARaND" href="login.php">
 						<i class="icon-user icon-large"> <!--ICONO DE USUARIO -->
 						</i>&nbsp;Inicio Sesion</a>
 					</li>
                  <li class="divider-vertical"></li>
 
                        <li class="">
-					<a rel="tooltip"  data-placement="bottom" title="Llamanos" id="MODIFICARaND" href="contactenos.php">
+					<a rel="tooltip"  data-placement="bottom" title="Llamanos" id="MODIFICARaND" href="#">
 						<i class="icon-music icon-large"> <!--ICONO DE USUARIO -->
-						</i>&nbsp;contactenos</a>
+						</i>&nbsp;Contactenos</a>
 					</li>
 
 					<li class="divider-vertical"></li>
