@@ -1,6 +1,7 @@
 <?php include('header.php'); ?>
-<?php include('head.php'); ?>
 <?php include('BarraNavegacion.php'); ?>								
+<br>
+<?php include('head.php'); ?>
 
 <div id="formu">
 <form name="form1" method="post" action="controladores/C_Usuario.php">

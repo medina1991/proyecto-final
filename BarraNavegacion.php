@@ -4,36 +4,33 @@
 
 <div id='cssmenu'>
   <ul>
-     <li class='active'><a href='index.php'>Home</a></li>
+     <li class='active'><a href='index.php'>Inicio</a></li>
+     
      <li class='has-sub '><a href='#'>Nosotros</a>
         <ul>
-           <li class='has-sub '><a href='#'>Ver</a>
+           <li class='has-sub '><a href='#'>Aspirantes</a>
               <ul>
-                  <li><a href='#'>ver1</a></li>
-                 <li><a href='#'>ver 2</a></li>
+                  <li><a href='#'>Hombres</a></li>
+                 <li><a href='#'>Mujeres</a></li>
               </ul>
            </li>
-           <li class='has-sub '><a href='#'>Iniciar </a>
+           <li class='has-sub '><a href='#'>Colaboradores </a>
               <ul>
-                 <li><a href='#'>Sub Item</a></li>
-                 <li><a href='#'>Sub Item</a></li>
+                 <li><a href='#'>Ingenieros</a></li>
+                 <li><a href='#'>Humanistas</a></li>
               </ul>
            </li>
         </ul>
      </li>
-     <li><a href='#'>Nosotros</a></li>
+     
+     <li><a href='#'>Consultar Estado</a></li>
      <li><a href='login.php'>Iniciar Sesion</a></li>
-      <li><a href='#'>Contacto</a></li>
+     <li><a href='#'>Contacto</a></li>
   </ul>
 </div>
 
 
-
-
-
-
-
-
+<?php /*
 
 	<div class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-inner"> <!-- CLASE CSS-->
@@ -112,9 +109,11 @@
 						
 
                     </div>
+ * 
+ 
                 </div>
             </div>
-        </div>
+        </div>*/?>
    
 
 	     	
