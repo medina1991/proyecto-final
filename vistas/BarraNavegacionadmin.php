@@ -38,9 +38,9 @@
 
 
 	                <li class="">
-					<a rel="tooltip"  data-placement="bottom" title="EditarSubtitulo" id="registro" href="#">
+                            <a rel="tooltip"  data-placement="bottom" title="EditarSubtitulo" id="registro" href="../modelos/cerrar.php">
 						<i class="icon-music icon-large"> 
-						</i>&nbsp;Titulo3</a> 
+						</i>&nbsp;cerrar</a> 
 					</li>
 					<li class="divider-vertical">	</li>
 					</ul>	

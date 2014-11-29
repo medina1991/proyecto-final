@@ -41,8 +41,7 @@ $consulta= mysql_query("select*from usuarios where usuario_identificador='$this-
 				if($fila=mysql_fetch_array($consulta))
 				{
 					$_SESSION['autenticado']= "SI";
-					//
-					$_SESSION['identificacion']=$fila['usuario_codigo'];
+					$_SESSION['identificacion']=$fila['usuario_identificador'];
 
 					if($fila['usuario_permisos']=='colaborador')
 					{
