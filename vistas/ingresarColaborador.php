@@ -4,7 +4,7 @@
 
 <div id="contenedor">
         <?php include("../modelos/M_Colaborador.php");?>
-        <h3>INGRESAR NUEVO COLABORADOR</h3><br>
+        <h3>INGRESAR NUEVO COLABORADORES HPTA!!!!!!</h3><br>
         <form name="form1" method="post" action="../controladores/C_Colaborador.php">
             <table align="center">
                 <tr><td class="registr">Digité su identificación:</td><td class="registr"><input type="text"name="usuario" title="usuario" value=""required></td></tr>

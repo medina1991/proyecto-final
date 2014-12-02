@@ -1,73 +1,130 @@
-<?php include('header.php'); ?>
-        <div id="contenedor">
-<?php include('head.php'); ?>     
-<?php include('BarraNavegacionCol.php'); ?>
-            
-            
-            <section>
-                <div id="contieneblog">
-
-                    <aside id="articuloss">
-                        <div>
-                            <article  contenteditable="true">
-                                <h3>Administrador desde  esta sección usted puede editar los datos de cualquier Colaborador</h3><br>
-                                <?php
-                                include("../modelos/conexion.php");
 
 
-                                $colaborador_cedula = $_GET['cedula_colaborador'];
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+    <th class="tg-031e"></th>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"></td>
+  </tr>
+</table>
 
-                                $consulta = mysql_query("select *from colaborador where (colaborador_id='$colaborador_cedula')");
-
-                                if ($row = mysql_fetch_array($consulta)) {
-
-                                    $colaborador_nombre = $row['colaborador_nombre'];
-                                    $colaborador_apellido = $row['colaborador_apellido'];
-
-                                    $colaborador_correo = $row['colaborador_email'];
-                                    $colaborador_ciudad = $row['colaborador_cel'];
-                                    $colaborador_carrera = $row['colaborador_carrera'];
-                                }
-                                ?>
-
-                                <h3>EDITAR DATOS DE COLABORADOR</h3><br>
-                                <form name="form" method="post" action="../controladores/C_Colaborador.php" > 
-                                    <table align="center">
-                                        <tr>
-                                            <td class="registr">Identificación</td>
-                                            <td class="registr"><input type="text" name="usuario" title="usuario" readonly="readonly" value=''></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="registr">Nombre</td>
-                                            <td class="registr"><input type="text" name="nombre" title="nombre" value='<?php echo  $colaborador_nombre; ?>'></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="registr">Apellido</td>
-                                            <td class="registr"><input type="text" name="apellido" title="apellido" value='<?php echo $colaborador_apellido; ?>'></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="registr">Correo</td>
-                                            <td class="registr"><input type="text" name="correo" title="correo" value='<?php echo $colaborador_correo; ?>'></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="registr">Login</td>
-                                            <td class="registr"><input type="password" name="login" title="login" readonly="readonly" value='<?php echo $colaborador_ciudad; ?>'></td>
-                                        </tr>
-                                          
-                                        <script language="JavaScript">function modificarColaborador() {
-                                                document.form.txtoperacion.value = 'modificarColaborador';
-                                            }</script>    
-                                        <td colspan="2" align="center" class="registr"> <input type="submit" name="Submit" value="Actualizar Datos Colaborador" onClick="modificarColaborador()" >
-                                            <input type='hidden' name='txtoperacion' value='des'>
-                                        </td></td>
-                                        </tr>
-                                    </table>
-                                </form> 					
-                        </div>
-                    </aside>
-                    <div style="clear:both"></div>
-                </div>
-            </section>
-            <div style="clear:both"></div>
-        </div>
-<?php include('footer.php'); ?>
